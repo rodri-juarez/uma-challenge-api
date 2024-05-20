@@ -20,7 +20,6 @@ const limiter = RateLimit({
 });
 
 app.use(limiter)
-
 app.use('/calendar', calendarRouter);
 
 app.listen(PORT, () => {
